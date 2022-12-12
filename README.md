@@ -17,6 +17,19 @@ To build the project:
 
 5. Upload the code to the esp32 and make sure it is connected in a proper way to an LTM84 temperature sensor. The datasheet is the following: https://www.ti.com/lit/ds/symlink/lmt84.pdf?ts=1670804378375&ref_url=https%253A%252F%252Fwww.google.com%252F
 
-6. Finally: Access the following URL to see the results posted in Node-Red UI: http://34.198.194.143:1880/ui | Access the following URL through Siri to listen to the last read of the sensor (temperature): http://34.198.194.143:1880/GetTemperature
+6. Access the following URL to see the results posted in Node-Red UI: http://34.198.194.143:1880/ui or <br /> Access the following URL through Siri to listen to the last read of the sensor (temperature): http://34.198.194.143:1880/GetTemperature
 
+Tools List:
+1. Esp32
+2. LTM84 Temperature Sensor
+3. Computer
+4. BreadBoard
+5. Wires x 3
+6. USB Adapter Cable
+
+Software List:
+1. AWS Lighsail
+2. VS Code
+3. Node-Red
+4. PlatformIO IDE
 
