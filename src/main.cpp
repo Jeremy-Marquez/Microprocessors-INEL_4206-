@@ -41,9 +41,26 @@ void loop() {
       
       http.addHeader("Content-Type", "application/x-www-form-urlencoded");
 
-      // Data from temp sensor TO DO
+      // String to concat data from temp sensor
       String httpRequestData = "value=";
-      httpRequestData.concat(analogRead(sensor));         
+
+    //==>Calculations done to calibrate the sensor (LTM84)<==
+    /*
+    y-y1 = m(x-x1) + b
+    v=mT + b
+    T=(v-b)/m
+
+    m=-5.58 mV
+    b= 1.038
+    v = analog(read)
+
+    T = (analogRead(sensor) - 1.038)/-0.00558
+
+    887mV = -5.58(27) + b ==> b = 887mV + 5.58m(27) ==> 1.03766 ==> 1.038
+    760mV = -5.58(50) + b ==> b = 760mV + 5.58m(50) ==> 1.039 ==> 1.038
+    */
+
+      httpRequestData.concat(((analogReadMilliVolts(sensor)* 0.001)- 1.038)/-0.00558);         
     
 
       http.POST(httpRequestData);
