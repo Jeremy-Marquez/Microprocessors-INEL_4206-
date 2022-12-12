@@ -43,7 +43,7 @@ void loop() {
 
       // Data from temp sensor TO DO
       String httpRequestData = "value=";
-      httpRequestData.concat(85.6/*analogRead(sensor)*/);         
+      httpRequestData.concat(analogRead(sensor));         
     
 
       http.POST(httpRequestData);
