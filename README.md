@@ -3,7 +3,7 @@
 Project Description: 
 The goal for this project is demonstrating IoT knowledge by sending HTTP requests from a microprocesor (esp32) to an instance in which Node-Red is running. The flow of Node-Red would be primarily based on two HTTP requests. One for updating the measurements from the sensor (POST) and the other for obtaining the results in a way that a virtual assistant like Siri can translate the output from text to speech.
 
-The dashboard of Node-Red is the following:
+The flow of Node-Red is the following:
 ![image](https://user-images.githubusercontent.com/70215217/207150785-0f14ebe0-07dd-4364-903a-ec966d68b22c.png)
 
 To build the project:
@@ -20,7 +20,7 @@ To build the project:
 6. Access the following URL to see the results posted in Node-Red UI: http://34.198.194.143:1880/ui or <br /> Access the following URL through Siri to listen to the last read of the sensor (temperature): http://34.198.194.143:1880/GetTemperature
 
 Tools List:
-1. Esp32
+1. Esp32 Microprocessor
 2. LTM84 Temperature Sensor
 3. Computer
 4. BreadBoard
